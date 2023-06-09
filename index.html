@@ -9,11 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
   <script src="https://kit.fontawesome.com/23761b7654.js" crossorigin="anonymous"></script>
   <title>Epycure | Compléments alimentaires à base de vitamines et plantes</title>
 </head>
 <body class="relative">
-  <header class="w-full fixed top-0 left-0">
+  <header class="w-full fixed top-0 left-0 z-40">
     <div class="bg-bg-header-top text-white text-xs lg:text-base h-9 lg:h-14 flex items-center justify-between">
       <div class="container flex items-center gap-8">
         <div class="hidden lg:flex items-center gap-4">
@@ -28,29 +30,302 @@
         </div>
       </div>
     </div>
-    <div class="container flex justify-between items-center py-4">
-      <div class="xl:hidden">
-        <i class="fa-solid fa-bars text-2xl" style="color: #000000;"></i>
-      </div>
-      <div class="hidden xl:flex gap-4 font-bold uppercase">
-        <a href="">tous les produits</a>
-        <a href="">séléction de printemps</a>
-      </div>
-      <div class="w-20 lg:w-36">
-        <a href="">
-          <img src="img/epycure-logo.svg" alt="Epycure Logo">
-        </a>
-      </div>
-      <div class="flex gap-4 items-center">
-        <div class="hidden xl:flex items-center gap-4">
-          <button class="font-bold py-2 px-3 text-white bg-bg-button rounded-full">faire mon diagnostic</button>
-          <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
-          <i class="fa-regular fa-circle-question fa-xl" style="color: #000000;"></i>
+    <div class="w-full items-center py-4 bg-white">
+      <div class="container flex justify-between items-center">
+        <div class="xl:hidden">
+          <i class="fa-solid fa-bars text-2xl" style="color: #000000;"></i>
         </div>
-        <a href=""><i class="fa-regular fa-user fa-xl" style="color: #000000;"></i></a>
-        <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i></a>
+        <div class="hidden xl:flex gap-4 font-bold uppercase">
+          <a href="">tous les produits</a>
+          <a href="">Gummies sans sucres</a>
+        </div>
+        <div class="w-20 lg:w-36">
+          <a href="">
+            <img src="img/epycure-logo.svg" alt="Epycure Logo">
+          </a>
+        </div>
+        <div class="flex gap-4 items-center">
+          <div class="hidden xl:flex items-center gap-4">
+            <button class="font-bold py-2 px-3 text-white bg-bg-button rounded-full">faire mon diagnostic</button>
+            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
+            <i class="fa-regular fa-circle-question fa-xl" style="color: #000000;"></i>
+          </div>
+          <a href=""><i class="fa-regular fa-user fa-xl" style="color: #000000;"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i></a>
+        </div>
       </div>
+      
     </div>
   </header>
-</body>
-</html>
+  
+  <main class="flex items-center">
+    <div class="hero-container flex gap-4 flex-col">
+      <h1 class="font-black text-[25px] leading-10">
+        Découvrez nos nouveaux gummies sans sucres ✨
+      </h1>
+      <span>La même efficacité, le sucre en moins.</span>
+      <div class="flex gap-4">
+        <button class="hero-btn bg-bg-button text-white">Nos produits</button>
+        <button class="hero-btn border-2 border-bg-button hover:border-white">Faire mon diagnostic</button>
+      </div>
+    </div>
+    
+    
+  </main>
+  <h2 class="text-center font-bold text-[25px] leading-10">Nos best-sellers</h2>
+  
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/cure-complexe-perte-de-poids-659274_828x.webp" alt="">
+        <div class="flex flex-col justify-center items-center text-center pb-4 py-4">
+          <h2 class="text-[1.15rem] font-bold text-bg-button mt-4">Cure Complexe perte de poids</h2>
+          <div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">Favorise une perte de poids complète et durable
+              
+              Inclus&nbsp;:&nbsp;Livret Minceur&nbsp;offert !&nbsp;
+              &nbsp;</p>
+            </div>
+            <div class="w-full flex justify-center">
+              <ul class="flex list-none">
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+              </ul>
+            </div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">184 avis</p>
+            <button class=" hover:opacity-70 flex gap-4 uppercase justify-center items-center py-2 px-4 rounded font-semibold text-bg-button w-fit bg-[#ffe59c]">
+              ajouter au panier
+              <hr>
+              <span class="text-[13px] border-l-2 pl-4 border-bg-button">
+                à partir de <br> 26,90€
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/cure-complexe-perte-de-poids-659274_828x.webp" alt="">
+        <div class="flex flex-col justify-center items-center text-center pb-4 py-4">
+          <h2 class="text-[1.15rem] font-bold text-bg-button mt-4">Cure Complexe perte de poids</h2>
+          <div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">Favorise une perte de poids complète et durable
+              
+              Inclus&nbsp;:&nbsp;Livret Minceur&nbsp;offert !&nbsp;
+              &nbsp;</p>
+            </div>
+            <div class="w-full flex justify-center">
+              <ul class="flex list-none">
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+              </ul>
+            </div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">184 avis</p>
+            <button class=" hover:opacity-70 flex gap-4 uppercase justify-center items-center py-2 px-4 rounded font-semibold text-bg-button w-fit bg-[#ffe59c]">
+              ajouter au panier
+              <hr>
+              <span class="text-[13px] border-l-2 pl-4 border-bg-button">
+                à partir de <br> 26,90€
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/cure-complexe-perte-de-poids-659274_828x.webp" alt="">
+        <div class="flex flex-col justify-center items-center text-center pb-4 py-4">
+          <h2 class="text-[1.15rem] font-bold text-bg-button mt-4">Cure Complexe perte de poids</h2>
+          <div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">Favorise une perte de poids complète et durable
+              
+              Inclus&nbsp;:&nbsp;Livret Minceur&nbsp;offert !&nbsp;
+              &nbsp;</p>
+            </div>
+            <div class="w-full flex justify-center">
+              <ul class="flex list-none">
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+              </ul>
+            </div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">184 avis</p>
+            <button class=" hover:opacity-70 flex gap-4 uppercase justify-center items-center py-2 px-4 rounded font-semibold text-bg-button w-fit bg-[#ffe59c]">
+              ajouter au panier
+              <hr>
+              <span class="text-[13px] border-l-2 pl-4 border-bg-button">
+                à partir de <br> 26,90€
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/cure-complexe-perte-de-poids-659274_828x.webp" alt="">
+        <div class="flex flex-col justify-center items-center text-center pb-4 py-4">
+          <h2 class="text-[1.15rem] font-bold text-bg-button mt-4">Cure Complexe perte de poids</h2>
+          <div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">Favorise une perte de poids complète et durable
+              
+              Inclus&nbsp;:&nbsp;Livret Minceur&nbsp;offert !&nbsp;
+              &nbsp;</p>
+            </div>
+            <div class="w-full flex justify-center">
+              <ul class="flex list-none">
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+              </ul>
+            </div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">184 avis</p>
+            <button class=" hover:opacity-70 flex gap-4 uppercase justify-center items-center py-2 px-4 rounded font-semibold text-bg-button w-fit bg-[#ffe59c]">
+              ajouter au panier
+              <hr>
+              <span class="text-[13px] border-l-2 pl-4 border-bg-button">
+                à partir de <br> 26,90€
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/cure-complexe-perte-de-poids-659274_828x.webp" alt="">
+        <div class="flex flex-col justify-center items-center text-center pb-4 py-4">
+          <h2 class="text-[1.15rem] font-bold text-bg-button mt-4">Cure Complexe perte de poids</h2>
+          <div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">Favorise une perte de poids complète et durable
+              
+              Inclus&nbsp;:&nbsp;Livret Minceur&nbsp;offert !&nbsp;
+              &nbsp;</p>
+            </div>
+            <div class="w-full flex justify-center">
+              <ul class="flex list-none">
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+              </ul>
+            </div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">184 avis</p>
+            <button class=" hover:opacity-70 flex gap-4 uppercase justify-center items-center py-2 px-4 rounded font-semibold text-bg-button w-fit bg-[#ffe59c]">
+              ajouter au panier
+              <hr>
+              <span class="text-[13px] border-l-2 pl-4 border-bg-button">
+                à partir de <br> 26,90€
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/cure-complexe-perte-de-poids-659274_828x.webp" alt="">
+        <div class="flex flex-col justify-center items-center text-center pb-4 py-4">
+          <h2 class="text-[1.15rem] font-bold text-bg-button mt-4">Cure Complexe perte de poids</h2>
+          <div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">Favorise une perte de poids complète et durable
+              
+              Inclus&nbsp;:&nbsp;Livret Minceur&nbsp;offert !&nbsp;
+              &nbsp;</p>
+            </div>
+            <div class="w-full flex justify-center">
+              <ul class="flex list-none">
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+              </ul>
+            </div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">184 avis</p>
+            <button class=" hover:opacity-70 flex gap-4 uppercase justify-center items-center py-2 px-4 rounded font-semibold text-bg-button w-fit bg-[#ffe59c]">
+              ajouter au panier
+              <hr>
+              <span class="text-[13px] border-l-2 pl-4 border-bg-button">
+                à partir de <br> 26,90€
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/cure-complexe-perte-de-poids-659274_828x.webp" alt="">
+        <div class="flex flex-col justify-center items-center text-center pb-4 py-4">
+          <h2 class="text-[1.15rem] font-bold text-bg-button mt-4">Cure Complexe perte de poids</h2>
+          <div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">Favorise une perte de poids complète et durable
+              
+              Inclus&nbsp;:&nbsp;Livret Minceur&nbsp;offert !&nbsp;
+              &nbsp;</p>
+            </div>
+            <div class="w-full flex justify-center">
+              <ul class="flex list-none">
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+              </ul>
+            </div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">184 avis</p>
+            <button class=" hover:opacity-70 flex gap-4 uppercase justify-center items-center py-2 px-4 rounded font-semibold text-bg-button w-fit bg-[#ffe59c]">
+              ajouter au panier
+              <hr>
+              <span class="text-[13px] border-l-2 pl-4 border-bg-button">
+                à partir de <br> 26,90€
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/cure-complexe-perte-de-poids-659274_828x.webp" alt="">
+        <div class="flex flex-col justify-center items-center text-center pb-4 py-4">
+          <h2 class="text-[1.15rem] font-bold text-bg-button mt-4">Cure Complexe perte de poids</h2>
+          <div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">Favorise une perte de poids complète et durable
+              
+              Inclus&nbsp;:&nbsp;Livret Minceur&nbsp;offert !&nbsp;
+              &nbsp;</p>
+            </div>
+            <div class="w-full flex justify-center">
+              <ul class="flex list-none">
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fddd3e;"></i></li>
+              </ul>
+            </div>
+            <p class="text-[13px] text-[#b5b5b5] font-semibold">184 avis</p>
+            <button class=" hover:opacity-70 flex gap-4 uppercase justify-center items-center py-2 px-4 rounded font-semibold text-bg-button w-fit bg-[#ffe59c]">
+              ajouter au panier
+              <hr>
+              <span class="text-[13px] border-l-2 pl-4 border-bg-button">
+                à partir de <br> 26,90€
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+  </html>

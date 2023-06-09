@@ -43,3 +43,51 @@ body{
     max-width: 1320px;
   }
 }
+
+main{
+  margin-top: 8rem;
+  padding-left: 10rem;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../img/SLIDER_E-SHOP_-_DESKTOP.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-container{
+  max-width: 30rem;
+}
+
+.hero-btn{
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 20px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  min-height: 3rem;
+  border-radius: 0.25rem;
+  line-height: 1;
+  transition: all .4s ease;
+}
+
+.swiper {
+  width: 72rem;
+  margin: 5rem auto;
+  /* height: 70vh;  */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid .062rem #eeeeee;
+  width: 390px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
